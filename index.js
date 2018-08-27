@@ -226,7 +226,7 @@ class NatureRemoAircon {
       return 0;
     } else if (settings.mode === 'warm') {
       return 1;
-    } else if (settings.mode === 'cool') {
+    } else if (settings.mode === 'dry') {
       return 2;
     } else if (settings.mode === 'auto') {
       return 3;
@@ -256,7 +256,7 @@ class NatureRemoAircon {
     } else if (value == 2) {
       // cool
       params.button = '';
-      params.operation_mode = 'cool';
+      params.operation_mode = 'dry';
     } else if (value == 3) {
       // auto
       if ('auto' in this.record.aircon.range.modes) {
